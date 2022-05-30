@@ -1,0 +1,10 @@
+package com.example.SmartShop;
+
+public class Customer extends  {
+	
+	HashMap<String, Integer> map = new HashMap<>();
+	
+	
+	
+
+}

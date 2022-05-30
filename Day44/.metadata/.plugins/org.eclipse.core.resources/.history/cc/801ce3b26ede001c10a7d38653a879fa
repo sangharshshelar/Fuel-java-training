@@ -1,0 +1,36 @@
+package com.example.OnlineShoping;
+import java.util.*;
+public class Customer {
+	public static void main(String[] args)
+    {
+	 HashMap<String, Integer> map = new HashMap<>();
+	  
+     // Adding elements to the Map
+     // using standard put() method
+     map.put("vishal", 10);
+     map.put("sachin", 30);
+     map.put("vaibhav", 20);
+
+     // Print size and content of the Map
+     System.out.println("Size of map is:- "
+                        + map.size());
+
+     // Printing elements in object of Map
+     System.out.println(map);
+
+     // Checking if a key is present and if
+     // present, print value by passing
+     // random element
+     if (map.containsKey("vishal")) {
+
+         // Mapping
+         Integer a = map.get("vishal");
+         Integer b = map.get("sachin");
+         Integer c = map.get("vaibhav");
+
+         // Printing value fr the corresponding key
+         System.out.println(a+b+c);
+     }
+    }
+
+}

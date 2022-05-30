@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+<table>
+
+
+          <tr>
+                <td>Choose the courses you like:</td>
+                <td><form:checkboxes path="courses" items="${courses}" /> 
+                </td>
+            </tr>
+            
+            
+ </table>
+ </body>
+ </html>

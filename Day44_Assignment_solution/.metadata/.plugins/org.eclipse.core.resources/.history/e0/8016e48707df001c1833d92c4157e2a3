@@ -1,0 +1,10 @@
+package com.example.SmartShop;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController {
+	
+	
+
+}

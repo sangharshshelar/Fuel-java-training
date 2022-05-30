@@ -1,0 +1,28 @@
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+<style>
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+form {
+
+   text-align: center;
+   font-size: 20px;
+   color: white;
+
+}
+
+</style>
+</head>
+<body>
+<header>Main Page </header>
+<a th:href="@{'/moviepage?Uname='+${Uname}" > Movie </a>
+<br>
+<a th:href="@{'/sportpage?Uname='+${Uname}"> Sport </a>
+</body>
+</html>

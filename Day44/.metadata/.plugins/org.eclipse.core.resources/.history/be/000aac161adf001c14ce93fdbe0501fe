@@ -1,0 +1,41 @@
+package com.example.OnlineShoping;
+
+import java.util.LinkedHashMap;
+public class Customer {
+	
+	private String country;
+	private LinkedHashMap<String, String> countryOptions;
+	
+	
+	public Customer()
+	{
+		countryOptions = new LinkedHashMap<String, String>();
+		countryOptions.put("IND", "India");
+		countryOptions.put("AUS", "Australia");
+		countryOptions.put("GER", "Germany");
+		countryOptions.put("CAN", "Canada");
+		countryOptions.put("SAF", "South Africa");
+	}
+
+
+	public String getCountry() {
+		return country;
+	}
+
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+
+	public LinkedHashMap<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+
+
+	public void setCountryOptions(LinkedHashMap<String, String> countryOptions) {
+		this.countryOptions = countryOptions;
+	}
+	
+	
+}

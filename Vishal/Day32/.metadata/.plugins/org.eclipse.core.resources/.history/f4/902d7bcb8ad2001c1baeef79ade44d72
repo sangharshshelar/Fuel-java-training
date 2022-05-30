@@ -1,0 +1,66 @@
+package com.example.crudapp;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+
+
+@SpringBootApplication
+public class CrudappApplication {
+
+	public static void main(String[] args) {
+		
+		 ApplicationContext context;
+		 context =  SpringApplication.run(CrudappApplication.class, args);
+		 
+		 StudentRepository stud = context.getBean(StudentRepository.class);
+		 
+		Student st = new Student(8745,"lkjhyy");
+		stud.save(st);
+		System.out.println("Record Saved ");
+		
+		// update 
+		
+//		
+//		Optional<Student> op;
+//		op = stud.findById(8745);
+//		Student st2 = op.get();
+//		System.out.println(st2.getId());
+//		System.out.println(st2.getName());
+//		st2.setName("demo123");
+//		stud.save(st2);
+//		
+	
+		
+		
+		
+		// select 
+		
+		
+		// delete 
+		Optional<Student> op1;
+		op1 = stud.findById(300);
+		Student st21 = op.get();
+		stud.delete(st21);
+		
+		
+		// search
+		List<Student> studlist;
+		studlist = stud.findAll();
+		
+		for(Student st3 : studlist)
+		{
+			System.out.println(st3.getId());
+			System.out.println(st3.getName());
+			
+		}
+		
+		
+		
+	}
+
+}

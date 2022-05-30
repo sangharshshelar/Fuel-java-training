@@ -1,0 +1,12 @@
+package com.example.OnlineShoping;
+
+import java.util.LinkedHashMap;
+public class Customer {
+	private LinkedHashMap<String, Integer> products;
+	
+	Customer()
+	{
+		products = new LinkedHashMap<String, Integer>();
+	}
+	
+}

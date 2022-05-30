@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<body>
+<form methodAttribute="Customer">
+Products:
+		<form:checkboxes items="${customer.productOptions}" path="products"/>
+		<br/><br/>
+</form>
+</body>
+</html>

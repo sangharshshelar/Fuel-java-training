@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Read the textbox value</h1>
+	<hr/>
+	<p>Employee First name: ${employee.firstName}</p>
+	<p>Employee Last name: ${employee.lastName}</p>
+	<p>Employee country: ${employee.country}</p>
+	<p>Employee Gender: ${employee.gender}</p>
+	<p>Employee Department: </p>
+	<ul>
+		<c:forEach var="department" items="${employee.departments}">
+			<li>${department}</li>
+		</c:forEach>
+	</ul>
+</body>
+</html>

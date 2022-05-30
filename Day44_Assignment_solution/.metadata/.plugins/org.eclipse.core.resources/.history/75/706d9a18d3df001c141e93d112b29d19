@@ -1,0 +1,38 @@
+package com.example.SmartShop;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@Controller
+public class UserController {
+	
+	@GetMapping("/mainpage")
+	public String goToMain()
+	{
+		HashMap<String, Integer> map = new HashMap<>();
+		map.put("vishal", 10);
+        map.put("sachin", 30);
+        map.put("vaibhav", 20);
+        
+        System.out.println(map);
+		return "main";
+	}
+	
+	@GetMapping("/nextpage")
+	public String goToNext()
+	{
+		return "next";
+	}
+	
+	@GetMapping("/cartpage")
+	public String goToCart()
+	{
+		return "cart";
+	}
+	
+	
+
+}

@@ -1,0 +1,17 @@
+<h1>Tourism page</h1>
+<form:form method="POST" commandName="products" action="tourism-result.html">
+<table>
+    <tr>
+    <td>
+<ul>
+<form:checkboxes element="li" path="countries" items="${countriesMap}"/>
+</ul>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="Submit"/>
+        </td>
+    </tr>
+</table>
+</form:form>

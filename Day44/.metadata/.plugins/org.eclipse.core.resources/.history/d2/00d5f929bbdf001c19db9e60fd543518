@@ -1,0 +1,6 @@
+<h1>Tourism result page</h1>
+Selected countries:
+<br/>
+<c:forEach var="country" items="${products.countries}">
+${country}<br/>
+</c:forEach>

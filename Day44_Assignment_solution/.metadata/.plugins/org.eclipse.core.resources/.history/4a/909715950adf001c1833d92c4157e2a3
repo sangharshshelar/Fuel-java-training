@@ -1,0 +1,24 @@
+package com.example.SmartShop;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@Controller
+public class UserController {
+	
+	@GetMapping("/mainpage")
+	public String goToMain()
+	{
+		return "main";
+	}
+	
+	@GetMapping("/nextpage")
+	public String goToNext()
+	{
+		return "next";
+	}
+	
+	
+
+}

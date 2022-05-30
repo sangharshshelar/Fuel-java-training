@@ -1,0 +1,43 @@
+package com.example.OnlineShoping;
+
+import java.util.LinkedHashMap;
+public class Customer {
+	private String products;
+	private LinkedHashMap<String, Integer> productOptions;
+	
+	Customer()
+	{
+		productOptions = new LinkedHashMap<String, Integer>();
+		productOptions.put("A", 100);
+		productOptions.put("B", 100);
+		productOptions.put("C", 100);
+		productOptions.put("D", 100);
+		productOptions.put("E", 100);
+		productOptions.put("F", 100);
+		
+		
+	}
+
+	public LinkedHashMap<String, Integer> getProducts() {
+		return productOptions;
+	}
+
+	public void setproductOptions(LinkedHashMap<String, Integer> products) {
+		this.productOptions = productOptions;
+	}
+
+	public LinkedHashMap<String, Integer> getProductOptions() {
+		return productOptions;
+	}
+
+	public void setProductOptions(LinkedHashMap<String, Integer> productOptions) {
+		this.productOptions = productOptions;
+	}
+
+	public void setProducts(String products) {
+		this.products = products;
+	}
+	
+	
+	
+}

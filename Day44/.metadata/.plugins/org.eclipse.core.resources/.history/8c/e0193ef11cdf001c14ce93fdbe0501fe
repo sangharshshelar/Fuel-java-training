@@ -1,0 +1,110 @@
+package com.example.OnlineShoping;
+
+import java.util.LinkedHashMap;
+
+public class Employee {
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	private String country;
+	
+	private LinkedHashMap<String, String> countryOptions;
+
+	private LinkedHashMap<String, String> genderOptions;
+	
+	private LinkedHashMap<String, String> departmentOptions;
+	
+	private String gender;
+	
+	private String[] departments;
+	
+	public Employee() {
+		//populate country options
+		countryOptions = new LinkedHashMap<String, String>();
+		countryOptions.put("IND", "India");
+		countryOptions.put("AUS", "Australia");
+		countryOptions.put("GER", "Germany");
+		countryOptions.put("CAN", "Canada");
+		countryOptions.put("SAF", "South Africa");
+		
+		//populate gender options
+		genderOptions = new LinkedHashMap<String, String>();
+		genderOptions.put("Male", "Male");
+		genderOptions.put("Female", "Female");
+		
+		//populate department options
+		departmentOptions = new LinkedHashMap<String, String>();
+		departmentOptions.put("Sales", "Sales");
+		departmentOptions.put("Marketing", "Marketing");
+		departmentOptions.put("HR", "HR");
+		departmentOptions.put("Admin", "Admin");
+		departmentOptions.put("IT", "IT");
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public LinkedHashMap<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+
+	public void setCountryOptions(LinkedHashMap<String, String> countryOptions) {
+		this.countryOptions = countryOptions;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public LinkedHashMap<String, String> getGenderOptions() {
+		return genderOptions;
+	}
+
+	public void setGenderOptions(LinkedHashMap<String, String> genderOptions) {
+		this.genderOptions = genderOptions;
+	}
+
+	public String[] getDepartments() {
+		return departments;
+	}
+
+	public void setDepartments(String[] departments) {
+		this.departments = departments;
+	}
+
+	public LinkedHashMap<String, String> getDepartmentOptions() {
+		return departmentOptions;
+	}
+
+	public void setDepartmentOptions(LinkedHashMap<String, String> departmentOptions) {
+		this.departmentOptions = departmentOptions;
+	}
+	
+}

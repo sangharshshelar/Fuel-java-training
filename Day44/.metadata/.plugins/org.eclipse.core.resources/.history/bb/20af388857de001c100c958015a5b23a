@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>login Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+form {
+
+   text-align: center;
+   font-size: 20px;
+   color: white;
+
+}
+
+</style>
+</head>
+<body >
+<header> Smart Shoping Online  </header>
+<br>
+ <input type = "checkbox" value="A" name="Product">A 
+ <input type = "checkbox" value="A" name="Product">B
+ <input type = "checkbox" value="A" name="Product">C 
+ <a href=""> Next Page </a>
+</body>
+</html>

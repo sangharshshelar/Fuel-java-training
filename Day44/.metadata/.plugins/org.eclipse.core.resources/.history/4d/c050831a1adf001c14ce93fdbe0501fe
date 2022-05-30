@@ -1,0 +1,9 @@
+package com.example.OnlineShoping;
+
+import java.util.LinkedHashMap;
+public class Customer {
+	
+	
+	private LinkedHashMap<String, String> departmentOptions;
+	
+}

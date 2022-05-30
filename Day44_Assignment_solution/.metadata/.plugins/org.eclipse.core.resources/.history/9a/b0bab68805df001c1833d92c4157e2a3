@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <form class="box" action="index.html" method="post">
+        <h1>login</h1>
+        <input type="text" name="" placeholder="Username">
+        <input type="password" name="" placeholder="Password">
+        <input type="submit" name="" value="login">
+        
+    </body>
+</html>

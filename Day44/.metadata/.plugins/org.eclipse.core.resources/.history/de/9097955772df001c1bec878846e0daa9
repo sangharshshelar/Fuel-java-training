@@ -1,0 +1,64 @@
+package com.example.OnlineShoping;
+
+
+
+
+import java.util.HashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+
+
+@Controller
+public class UserController {
+	
+	
+     @Autowired
+     UserRepository userepo ; 
+	
+	@GetMapping("/mainpage")
+	public String goToMain(@ModelAttribute User user)
+	{
+		 HashMap<String, Integer> map1 = new HashMap<>();
+		   map1.put("A", 100);
+	        map1.put("B", 300);
+	        map1.put("C", 200);
+	        
+	        System.out.println("Mappings of HashMap hm1 are : "
+                    + map1.getOrDefault("A" , 100));
+	        
+	        userepo.save(user);
+	        
+	     
+		return "main";
+	}
+	
+	@GetMapping("/nextPage")
+	public String goToNext()
+	{
+		 HashMap<String, Integer> map2 = new HashMap<>();
+		   map2.put("D", 100);
+	        map2.put("E", 500);
+	        map2.put("F", 200);
+	        System.out.println("Mappings of HashMap hm1 are : "
+                    + map2 );
+	        
+		return "next";
+	}
+	
+	@GetMapping("/resultpage")
+	public String goToResult()	
+	{
+		
+		return "result";
+	}
+	
+	
+	
+
+
+}

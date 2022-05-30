@@ -1,0 +1,69 @@
+package com.example.OnlineShoping;
+
+import java.util.HashMap;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+	
+	@Id
+	private int id;
+	private String Uname;
+	private String Pass ;
+	
+	HashMap<String, Integer> map1 = new HashMap<>();
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getUname() {
+		return Uname;
+	}
+
+	public void setUname(String uname) {
+		Uname = uname;
+	}
+
+	public String getPass() {
+		return Pass;
+	}
+
+	public void setPass(String pass) {
+		Pass = pass;
+	}
+
+	public HashMap<String, Integer> getMap1() {
+		return map1;
+	}
+
+	public void setMap1(HashMap<String, Integer> map1) {
+		this.map1 = map1;
+	}
+
+	
+	
+	public User() {
+		
+	}
+
+	public User(int id, String uname, String pass, HashMap<String, Integer> map1) {
+		super();
+		this.id = id;
+		Uname = uname;
+		Pass = pass;
+		this.map1 = map1;
+	}
+	
+	
+	
+	   
+	
+
+}

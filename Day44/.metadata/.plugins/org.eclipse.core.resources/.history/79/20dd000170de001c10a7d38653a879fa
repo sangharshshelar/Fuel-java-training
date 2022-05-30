@@ -1,0 +1,5 @@
+package com.example.OnlineShoping;
+import java.util.*;
+public class Customer {
+	
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Read the textbox value</h1>
+	<hr/>
+	<formaction="processForm" modelAttribute="customer">
+		First Name:<input path="firstName" /><br/><br/>
+		Last Name: <input path="lastName" /><br/><br/>
+		Country: <select path="country">
+			<form:options items="${customer.countryOptions}" />
+		</select>
+		<br/><br/>
+		Gender: 
+		<radiobuttons path="gender" items="${employee.genderOptions}" />
+		<br/><br/>
+		Departments:
+		<checkboxes items="${employee.departmentOptions}" path="departments"/>
+		<br/><br/>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+package com.example.OnlineShoping;
+
+import java.util.LinkedHashMap;
+public class Customer {
+	
+	private LinkedHashMap<String, String> departmentOptions;
+	private String[] departments;
+	
+	
+	departmentOptions = new LinkedHashMap<String, String>();
+	departmentOptions.put("Sales", "Sales");
+	departmentOptions.put("Marketing", "Marketing");
+	departmentOptions.put("HR", "HR");
+	departmentOptions.put("Admin", "Admin");
+	departmentOptions.put("IT", "IT");
+	
+}

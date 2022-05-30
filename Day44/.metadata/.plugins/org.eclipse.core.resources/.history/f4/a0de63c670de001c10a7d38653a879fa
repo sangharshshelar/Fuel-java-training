@@ -1,0 +1,15 @@
+<form:form action="processForm" modelAttribute="employee">
+		First Name:<form:input path="firstName" /><br/><br/>
+		Last Name: <form:input path="lastName" /><br/><br/>
+		Country: <form:select path="country">
+			<form:options items="${employee.countryOptions}" />
+		</form:select>
+		<br/><br/>
+		Gender: 
+		<form:radiobuttons path="gender" items="${employee.genderOptions}" />
+		<br/><br/>
+		Departments:
+		<form:checkboxes items="${employee.departmentOptions}" path="departments"/>
+		<br/><br/>
+		<button type="submit">Submit</button>
+	</form:form>

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>login Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+form {
+
+   text-align: center;
+   font-size: 20px;
+   color: white;
+
+}
+
+</style>
+</head>
+<body >
+<header> Smart Shoping Online  </header>
+<br>
+<form class="box" action="/resultpage" method="get">
+        <h1>Select Product </h1>
+        <input type = "checkbox" value="D" class="largerCheckbox" name="Product">D 
+        <br>
+        <input type = "checkbox" value="E" class="largerCheckbox" name="Product">E
+        <br>
+        <input type = "checkbox" value="F"class="largerCheckbox"  name="Product">F
+        <br> 
+        <input type="submit"  value="Submit">
+        <br>
+        
+ </form>
+
+
+ <br>
+<a href="/"> Submit </a>
+</body>
+</html>

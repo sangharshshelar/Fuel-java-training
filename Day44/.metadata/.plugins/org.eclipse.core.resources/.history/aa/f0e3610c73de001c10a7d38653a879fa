@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<body>
+<form methodAttribute="Cusomer">
+Products:
+		<form:checkboxes items="${employee.departmentOptions}" path="departments"/>
+		<br/><br/>
+</form>
+</body>
+</html>
